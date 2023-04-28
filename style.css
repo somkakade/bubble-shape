@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+.container {
+  position: relative;
+}
+.bubble-shape {
+  width: 200px;
+  height: 150px;
+  background-color: #ff0000;
+  border-radius: 14px;
+}
+.bubble-shape::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-right: 58px solid #ff0000;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: -29%;
+  top: 36%;
+}
